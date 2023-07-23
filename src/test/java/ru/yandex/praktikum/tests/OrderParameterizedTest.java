@@ -1,4 +1,5 @@
 package ru.yandex.praktikum.tests;
+
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;

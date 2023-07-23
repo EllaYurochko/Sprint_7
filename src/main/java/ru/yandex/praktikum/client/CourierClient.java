@@ -1,4 +1,5 @@
 package ru.yandex.praktikum.client;
+
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 import ru.yandex.praktikum.pojo.CourierRequest;

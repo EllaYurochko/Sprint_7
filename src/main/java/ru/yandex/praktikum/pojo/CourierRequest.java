@@ -1,4 +1,5 @@
 package ru.yandex.praktikum.pojo;
+
 public class CourierRequest {
     private String login;
     private String password;

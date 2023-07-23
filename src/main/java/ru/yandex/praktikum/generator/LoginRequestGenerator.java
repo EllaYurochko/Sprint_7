@@ -1,4 +1,5 @@
 package ru.yandex.praktikum.generator;
+
 import ru.yandex.praktikum.pojo.CourierRequest;
 import ru.yandex.praktikum.pojo.LoginRequest;
 

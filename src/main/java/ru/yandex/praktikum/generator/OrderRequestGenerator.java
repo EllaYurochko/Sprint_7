@@ -1,4 +1,5 @@
 package ru.yandex.praktikum.generator;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
 import ru.yandex.praktikum.pojo.OrderRequest;

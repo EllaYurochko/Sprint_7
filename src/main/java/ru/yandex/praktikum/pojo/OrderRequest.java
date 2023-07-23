@@ -1,4 +1,5 @@
 package ru.yandex.praktikum.pojo;
+
 public class OrderRequest {
     private String firstName;
     private String lastName;
