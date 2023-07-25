@@ -47,6 +47,10 @@ public class CourierTest {
     public void courierShouldNotBeCreatedWithNotUniqueLoginTest() {
         CourierRequest randomCourierRequest = getRandomCourierRequest();
         courierClient.create(randomCourierRequest).assertThat().statusCode(SC_CREATED).and().body("ok", equalTo(true));
+
+        LoginRequest loginRequest = getLoginRequest(randomCourierRequest);
+        id = courierClient.login(loginRequest).assertThat().statusCode(SC_OK).and().body("id", notNullValue()).extract().path("id");
+
         courierClient.create(randomCourierRequest).assertThat().statusCode(SC_CONFLICT).and().body("message", equalTo("Этот логин уже используется. Попробуйте другой."));
     }
 
