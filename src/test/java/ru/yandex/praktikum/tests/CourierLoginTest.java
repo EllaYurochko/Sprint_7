@@ -1,18 +1,17 @@
 package ru.yandex.praktikum.tests;
-import io.qameta.allure.junit4.DisplayName;
-import ru.yandex.praktikum.client.CourierClient;
-import ru.yandex.praktikum.pojo.CourierRequest;
-import ru.yandex.praktikum.pojo.LoginRequest;
 
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import ru.yandex.praktikum.client.CourierClient;
+import ru.yandex.praktikum.pojo.CourierRequest;
+import ru.yandex.praktikum.pojo.LoginRequest;
 
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 import static ru.yandex.praktikum.generator.CourierRequestGenerator.getRandomCourierRequest;
-import static ru.yandex.praktikum.generator.LoginRequestGenerator.*;
 import static ru.yandex.praktikum.generator.LoginRequestGenerator.getLoginRequest;
 
 public class CourierLoginTest {
